@@ -44,6 +44,9 @@
 		<activity
 			android:name=".components.activity.AsyncTaskActivity"
 			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.ReceiverActivity"
+			android:screenOrientation="portrait" />
 
 		<service android:name=".components.service.LocalService" />
 		<service
@@ -56,6 +59,14 @@
 		<provider
 			android:name=".components.provider.ExampleProvider"
 			android:authorities="com.shizy.interview.provider" />
+
+		<receiver
+			android:name=".components.receiver.ExampleReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.shizy.interview.RECEIVER" />
+			</intent-filter>
+		</receiver>
 
 	</application>
 

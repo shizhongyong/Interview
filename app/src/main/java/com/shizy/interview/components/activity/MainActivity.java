@@ -14,7 +14,8 @@ public class MainActivity extends ListActivity {
 	private static final Class[] CLASS_LIST = new Class[] {
 			LaunchModeActivity.class,
 			ServiceActivity.class,
-			AsyncTaskActivity.class
+			AsyncTaskActivity.class,
+			ReceiverActivity.class
 	};
 
 	@Override
