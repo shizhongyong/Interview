@@ -41,6 +41,9 @@
 		<activity
 			android:name=".components.activity.ServiceActivity"
 			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.AsyncTaskActivity"
+			android:screenOrientation="portrait" />
 
 		<service android:name=".components.service.LocalService" />
 		<service
