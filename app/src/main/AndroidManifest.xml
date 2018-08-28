@@ -53,6 +53,10 @@
 			android:name=".components.service.AidlService"
 			android:process=":aidl" />
 
+		<provider
+			android:name=".components.provider.ExampleProvider"
+			android:authorities="com.shizy.interview.provider" />
+
 	</application>
 
 </manifest>
