@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="60dp">
+
+	<TextView
+		android:id="@+id/view_loading"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="加载中，请等待……" />
+
+	<TextView
+		android:id="@+id/view_over"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="没有更多数据了" />
+
+	<TextView
+		android:id="@+id/view_error"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="失败了，单击重试！" />
+
+</FrameLayout>
