@@ -336,6 +336,7 @@ public class CommonDialog extends Dialog {
 
 		public Params(Context context) {
 			mContext = context;
+			mCancelable = true;
 		}
 
 		private void apply(CommonDialog dialog) {
