@@ -161,12 +161,18 @@ public class CommonDialog extends Dialog {
 
 	@SuppressWarnings({"UnusedDeclaration"})
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		return mScrollView != null && mScrollView.executeKeyEvent(event);
+		if (mScrollView != null && mScrollView.executeKeyEvent(event)) {
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
 	}
 
 	@SuppressWarnings({"UnusedDeclaration"})
 	public boolean onKeyUp(int keyCode, KeyEvent event) {
-		return mScrollView != null && mScrollView.executeKeyEvent(event);
+		if (mScrollView != null && mScrollView.executeKeyEvent(event)) {
+			return true;
+		}
+		return super.onKeyUp(keyCode, event);
 	}
 
 	private void setupView() {
