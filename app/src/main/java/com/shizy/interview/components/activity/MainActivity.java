@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.shizy.interview.components.activity.anim.AnimationActivity;
+import com.shizy.interview.components.activity.anim.CardFlipActivity;
+import com.shizy.interview.components.activity.anim.CrossfadeActivity;
+import com.shizy.interview.components.activity.anim.ZoomActivity;
 import com.shizy.interview.components.activity.launch_mode.LaunchModeActivity;
 
 public class MainActivity extends ListActivity {
@@ -15,7 +19,11 @@ public class MainActivity extends ListActivity {
 			LaunchModeActivity.class,
 			ServiceActivity.class,
 			AsyncTaskActivity.class,
-			ReceiverActivity.class
+			ReceiverActivity.class,
+			AnimationActivity.class,
+			CrossfadeActivity.class,
+			CardFlipActivity.class,
+			ZoomActivity.class
 	};
 
 	@Override
