@@ -11,6 +11,7 @@ import com.shizy.interview.components.activity.anim.AnimationActivity;
 import com.shizy.interview.components.activity.anim.CardFlipActivity;
 import com.shizy.interview.components.activity.anim.CrossfadeActivity;
 import com.shizy.interview.components.activity.anim.ZoomActivity;
+import com.shizy.interview.components.activity.drag.ViewDragActivity;
 import com.shizy.interview.components.activity.launch_mode.LaunchModeActivity;
 
 public class MainActivity extends ListActivity {
@@ -24,7 +25,8 @@ public class MainActivity extends ListActivity {
 			CrossfadeActivity.class,
 			CardFlipActivity.class,
 			ZoomActivity.class,
-			BottomSheetActivity.class
+			BottomSheetActivity.class,
+			ViewDragActivity.class
 	};
 
 	@Override

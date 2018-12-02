@@ -62,6 +62,9 @@
         <activity
             android:name=".components.activity.BottomSheetActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".components.activity.drag.ViewDragActivity"
+            android:screenOrientation="portrait" />
 
         <service android:name=".components.service.LocalService" />
         <service
