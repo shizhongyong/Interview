@@ -23,7 +23,8 @@ public class MainActivity extends ListActivity {
 			AnimationActivity.class,
 			CrossfadeActivity.class,
 			CardFlipActivity.class,
-			ZoomActivity.class
+			ZoomActivity.class,
+			BottomSheetActivity.class
 	};
 
 	@Override

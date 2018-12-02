@@ -59,6 +59,9 @@
         <activity
             android:name=".components.activity.anim.ZoomActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".components.activity.BottomSheetActivity"
+            android:screenOrientation="portrait" />
 
         <service android:name=".components.service.LocalService" />
         <service
