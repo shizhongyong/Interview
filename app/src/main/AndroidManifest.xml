@@ -1,91 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.shizy.interview">
+	package="com.shizy.interview">
 
-    <application
-        android:name=".App"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".components.activity.MainActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+	<application
+		android:name=".App"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".components.activity.MainActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
 
-        <activity
-            android:name=".components.activity.launch_mode.LaunchModeActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.launch_mode.StandardActivity"
-            android:launchMode="standard"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.launch_mode.SingleTopActivity"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.launch_mode.SingleTaskActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.launch_mode.SingleInstanceActivity"
-            android:launchMode="singleInstance"
-            android:screenOrientation="portrait" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
 
-        <activity
-            android:name=".components.activity.ServiceActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.AsyncTaskActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.ReceiverActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.anim.AnimationActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.anim.CrossfadeActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.anim.CardFlipActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.anim.ZoomActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.BottomSheetActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".components.activity.drag.ViewDragActivity"
-            android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.launch_mode.LaunchModeActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.launch_mode.StandardActivity"
+			android:launchMode="standard"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.launch_mode.SingleTopActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.launch_mode.SingleTaskActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.launch_mode.SingleInstanceActivity"
+			android:launchMode="singleInstance"
+			android:screenOrientation="portrait" />
 
-        <service android:name=".components.service.LocalService" />
-        <service
-            android:name=".components.service.MessengerService"
-            android:process=":messenger" />
-        <service
-            android:name=".components.service.AidlService"
-            android:process=":aidl" />
+		<activity
+			android:name=".components.activity.ServiceActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.AsyncTaskActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.ReceiverActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.anim.AnimationActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.anim.CrossfadeActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.anim.CardFlipActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.anim.ZoomActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.BottomSheetActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.drag.ViewDragActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.gesture.CreateGestureActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".components.activity.gesture.GestureBuilderActivity"
+			android:screenOrientation="portrait" />
 
-        <provider
-            android:name=".components.provider.ExampleProvider"
-            android:authorities="com.shizy.interview.provider" />
+		<service android:name=".components.service.LocalService" />
+		<service
+			android:name=".components.service.MessengerService"
+			android:process=":messenger" />
+		<service
+			android:name=".components.service.AidlService"
+			android:process=":aidl" />
 
-        <receiver
-            android:name=".components.receiver.ExampleReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.shizy.interview.RECEIVER" />
-            </intent-filter>
-        </receiver>
+		<provider
+			android:name=".components.provider.ExampleProvider"
+			android:authorities="com.shizy.interview.provider" />
 
-    </application>
+		<receiver
+			android:name=".components.receiver.ExampleReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.shizy.interview.RECEIVER" />
+			</intent-filter>
+		</receiver>
+
+	</application>
 
 </manifest>
